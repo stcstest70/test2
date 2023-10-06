@@ -1,0 +1,50 @@
+.job{
+    display: flex;
+    margin-top: 30px;
+}
+.jobContainer{
+    width: 80%;
+    margin: auto;
+}
+.jobHead{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.jobBody{
+    width: 100%;
+}
+.jobLogo{
+    display: flex;
+}
+.jobLogo div{
+    margin-left: 20px;
+}
+.jobLogo img{
+    width: 50px;
+}
+.jobdes{
+    display: flex;
+    margin-top: 40px;
+}
+.other{
+    margin-top: 40px;
+}
+.jobdes div{
+    width: 50%;
+}
+.submitBtn{
+    margin-top: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px){
+    .jobdes{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .jobdes div{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
