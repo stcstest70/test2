@@ -28,7 +28,7 @@ const JobApplications = () => {
     const [data, setData] = useState();
     const CheckTokenValid = async () => {
         const token = sessionStorage.getItem('AdminToken');
-        const res = await fetch('http://localhost:5000/checkAdminTokenValid', {
+        const res = await fetch('https://test-api-wr81.onrender.com/checkAdminTokenValid', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
@@ -53,7 +53,7 @@ const JobApplications = () => {
 
     const getData = async () => {
         try {
-            const res = await fetch('http://localhost:5000/getJobApplies', {
+            const res = await fetch('https://test-api-wr81.onrender.com/getJobApplies', {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json', // Set the content type to JSON
@@ -119,7 +119,7 @@ const JobApplications = () => {
         }
         else {
             try {
-                const res = await fetch('http://localhost:5000/editApplication1', {
+                const res = await fetch('https://test-api-wr81.onrender.com/editApplication1', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -184,7 +184,7 @@ const JobApplications = () => {
         }
         else {
             try {
-                const res = await fetch('http://localhost:5000/editApplication2', {
+                const res = await fetch('https://test-api-wr81.onrender.com/editApplication2', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -211,7 +211,7 @@ const JobApplications = () => {
     const handleEditSubmit3 = async () => {
         
             try {
-                const res = await fetch('http://localhost:5000/editApplication3', {
+                const res = await fetch('https://test-api-wr81.onrender.com/editApplication3', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

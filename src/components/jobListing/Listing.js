@@ -24,7 +24,7 @@ const Listing = () => {
     const [selectedType, setSelectedType] = useState('');
     const CheckTokenValid = async () => {
         const token = sessionStorage.getItem('AdminToken');
-        const res = await fetch('http://localhost:5000/checkAdminTokenValid', {
+        const res = await fetch('https://test-api-wr81.onrender.com/checkAdminTokenValid', {
           method: 'POST',
           headers: {
             "Content-Type": "application/json"
@@ -48,7 +48,7 @@ const Listing = () => {
       }, []);
   const getData = async () => {
     try {
-      const res = await fetch('http://localhost:5000/getJobCategory', {
+      const res = await fetch('https://test-api-wr81.onrender.com/getJobCategory', {
         method: 'GET',
         headers: {
           'Accept': 'application/json', // Set the content type to JSON
@@ -68,7 +68,7 @@ const Listing = () => {
   };
   const getData1 = async () => {
     try {
-      const res = await fetch('http://localhost:5000/getJobType', {
+      const res = await fetch('https://test-api-wr81.onrender.com/getJobType', {
         method: 'GET',
         headers: {
           'Accept': 'application/json', // Set the content type to JSON
@@ -88,7 +88,7 @@ const Listing = () => {
   const [data2, setData2] = useState();
   const getListingData = async () => {
     try {
-      const res = await fetch('http://localhost:5000/getListing', {
+      const res = await fetch('https://test-api-wr81.onrender.com/getListing', {
         method: 'GET',
         headers: {
           'Accept': 'application/json', // Set the content type to JSON
@@ -172,7 +172,7 @@ const Listing = () => {
         }
         console.log(newData);
 
-        const res = await fetch('http://localhost:5000/addListing',{
+        const res = await fetch('https://test-api-wr81.onrender.com/addListing',{
           method: 'POST',
           headers: {
             "Content-Type": "application/json"

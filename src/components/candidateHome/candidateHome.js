@@ -11,7 +11,7 @@ const CandidateHome = () => {
   const navigate = useNavigate();
   const getData = async () => {
     try {
-      const res = await fetch('http://localhost:5000/getListing', {
+      const res = await fetch('https://test-api-wr81.onrender.com/getListing', {
         method: 'GET',
         headers: {
           'Accept': 'application/json', // Set the content type to JSON

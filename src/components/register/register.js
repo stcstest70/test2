@@ -29,7 +29,7 @@ const Register = () => {
     else {
       try {
         
-        const res = await fetch('http://localhost:5000/register', {
+        const res = await fetch('https://test-api-wr81.onrender.com/register', {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

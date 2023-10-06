@@ -20,7 +20,7 @@ const AdminLogin = () => {
     }
     else {
       try {
-        const res = await fetch('http://localhost:5000/adminLogin', {
+        const res = await fetch('https://test-api-wr81.onrender.com/adminLogin', {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -54,7 +54,7 @@ const AdminLogin = () => {
     }
     else {
       try {
-        const res = await fetch('http://localhost:5000/candidateLogin', {
+        const res = await fetch('https://test-api-wr81.onrender.com/candidateLogin', {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

@@ -66,7 +66,7 @@ const Job = () => {
     };
     const getData = async () => {
         try {
-            const res = await fetch('http://localhost:5000/getJobById', {
+            const res = await fetch('https://test-api-wr81.onrender.com/getJobById', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -106,7 +106,7 @@ const Job = () => {
         }
         else {
             try {
-                const res = await fetch('/apply', {
+                const res = await fetch('https://test-api-wr81.onrender.com/apply', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
